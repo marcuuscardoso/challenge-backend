@@ -9,7 +9,7 @@ const UserController = UserControllerFactory.make();
 /**
  * Create User
  */
-userRoutes.post("/", ensureAuthenticated, async (req: Request, res: Response) => UserController.create(req, res));
+userRoutes.post("/", async (req: Request, res: Response) => UserController.create(req, res));
 
 /**
  * Find All Users
