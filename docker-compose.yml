@@ -1,0 +1,34 @@
+version: '3.3'
+
+services:
+
+  mysql:
+    image: mysql
+    container_name: mysql
+    tty: true
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: smartix-challenge
+      MYSQL_USER: smartix-challenge
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: password
+    volumes:
+      - dbdata:/var/lib/mysql/
+    networks:
+      - smartix-challenge
+
+  mail:
+    image: "sj26/mailcatcher"
+    container_name: "mailcatcher"
+    ports:
+      - "1080:1080"
+      - "1025:1025"
+
+volumes:
+  dbdata:
+    driver: local
+
+networks:
+  smartix-challenge:
+    driver: bridge
