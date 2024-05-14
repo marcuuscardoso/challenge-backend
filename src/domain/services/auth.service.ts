@@ -58,4 +58,8 @@ export class AuthService {
         await this.repository.deleteOtp(authenticatedUser.otp.id);
         return this.AuthProvider.generateToken({ ...authenticatedUser.dataValues, otp: null });
     }
+
+    async verify(access_token: string): Promise<object> {
+        return this.AuthProvider.verifyToken(access_token.split("Bearer ")[1]);
+    }
 }

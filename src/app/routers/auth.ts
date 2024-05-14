@@ -10,4 +10,9 @@ const AuthController = AuthControllerFactory.make();
  */
 authRoutes.post("/", async (req: Request, res: Response) => AuthController.login(req, res));
 
+/**
+ * Verify user
+ */
+authRoutes.get("/verify", async (req: Request, res: Response) => AuthController.verify(req, res));
+
 export { authRoutes };

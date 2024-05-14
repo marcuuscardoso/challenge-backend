@@ -28,4 +28,24 @@ export class AuthController {
             return res.status(500).end();
         }
     }
+
+    async verify(req: Request, res: Response) {
+        const access_token = req.headers.authorization;
+
+        try {
+            if (!access_token) throw new ValidationError(401, "TOKEN_NOT_PROVIDED");
+
+            const decoded = await this.service.verify(access_token as string);
+
+            return res.status(200).json(decoded);
+        } catch (err) {
+            console.error(err);
+
+            if (err instanceof ValidationError) {
+                return res.status(err.status).json({ error: err.message });
+            }
+            
+            return res.status(500).end();
+        }
+    }
 }
