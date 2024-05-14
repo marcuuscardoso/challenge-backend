@@ -23,7 +23,7 @@ git clone https://github.com/marcuuscardoso/smartix-challenge-backend
 cd smartix-challenge-backend
 yarn
 docker-compose up -d
-yarn start:dev
+yarn dev
 ```
 or 
 
@@ -32,7 +32,7 @@ git clone https://github.com/marcuuscardoso/smartix-challenge-backend
 cd smartix-challenge-backend
 npm install
 docker-compose up -d
-npm run start:dev
+npm run dev
 ```
 
 ## Docs
