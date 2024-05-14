@@ -2,7 +2,7 @@
 
 Uma API REST de cadastro de usuário com autenticação em dois fatores via email.
 
-Eu gravei um vídeo iniciando a aplicação e mostrando todos os endpoints funcionando, você poderá assistir ele [aqui]().
+Eu gravei um vídeo iniciando a aplicação e mostrando todos os endpoints funcionando, você poderá assistir ele [aqui](https://youtu.be/tWdm7hdbVcU).
 
 Utilizei o [MailCatcher](https://mailcatcher.me/) para o recebimento de emails, basta acessar http://127.0.0.1:1080/.
 
@@ -36,7 +36,7 @@ npm run start:dev
 ```
 
 ## Docs
-Todos os endpoints da aplicação foram documentados utilizado [Postman](https://www.postman.com/downloads/), você pode acessar a coleção do postman [aqui]().
+Todos os endpoints da aplicação foram documentados utilizado [Postman](https://www.postman.com/downloads/), você pode acessar a coleção do postman [aqui](https://www.postman.com/winter-zodiac-779832/workspace/smartix-challenge).
 
 ---
 ### Authorization
