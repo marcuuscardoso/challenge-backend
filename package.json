@@ -1,9 +1,9 @@
 {
-  "name": "smartix-challenge",
+  "name": "backend-challenge",
   "version": "1.0.0",
   "main": "src/app/server.ts",
   "repository": {
-    "url": "https://github.com/marcuuscardoso/smartix-cahllenge"
+    "url": "https://github.com/marcuuscardoso/backend-challenge"
   },
   "author": "marcuuscardoso <marcuus.cardoso@gmail.com.com>",
   "license": "MIT",
