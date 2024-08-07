@@ -1,4 +1,4 @@
-# SMARTIX-CHALLENGE-BACKEND
+# CHALLENGE-BACKEND
 
 Uma API REST de cadastro de usuário com autenticação em dois fatores via email.
 
@@ -19,8 +19,8 @@ Intale o projeto e inicie com [NPM](https://nodejs.org/en) or [Yarn](https://yar
 Você irá precisar renomear o arquivo ```.env.sample``` para ```.env```
 
 ```bash
-git clone https://github.com/marcuuscardoso/smartix-challenge-backend
-cd smartix-challenge-backend
+git clone https://github.com/marcuuscardoso/challenge-backend
+cd challenge-backend
 yarn
 docker-compose up -d
 yarn dev
@@ -28,15 +28,15 @@ yarn dev
 or 
 
 ```bash
-git clone https://github.com/marcuuscardoso/smartix-challenge-backend
-cd smartix-challenge-backend
+git clone https://github.com/marcuuscardoso/challenge-backend
+cd challenge-backend
 npm install
 docker-compose up -d
 npm run dev
 ```
 
 ## Docs
-Todos os endpoints da aplicação foram documentados utilizado [Postman](https://www.postman.com/downloads/), você pode acessar a coleção do postman [aqui](https://www.postman.com/winter-zodiac-779832/workspace/smartix-challenge).
+Todos os endpoints da aplicação foram documentados utilizado [Postman](https://www.postman.com/downloads/), você pode acessar a coleção do postman [aqui](https://www.postman.com/marcuuscardoso/workspace/backend-challenge/).
 
 ---
 ### Authorization
